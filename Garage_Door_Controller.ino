@@ -11,7 +11,7 @@
 #include <EthernetUdp.h>
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress ip(192,168,1,177);
+IPAddress ip(192,168,1,178);
 IPAddress subnet(255,255,255,0);
 IPAddress gateway(192,168,1,254);
 
@@ -171,7 +171,7 @@ void sendEmail(){
 		mailClient.println("SUBJECT: Automated Garage");
 		mailClient.println();
 		mailClient.println("The garage door is open");
-		mailClient.println("please visit 192.168.1.177 to close");
+		mailClient.println("please visit 192.168.1.178 to close");
 		mailClient.println(".");
 		mailClient.println(".");
 		mailClient.println("QUIT");
